@@ -15,9 +15,7 @@ const Login = () => {
     const userState = useSelector(state => state.user);
     const [cnt, setCnt] = useState(0);
 
-    useEffect(() =>{
-        alert(cnt)
-    }, [cnt]);
+    
 
     useEffect(() => {
         console.log('Use effect');
@@ -82,7 +80,7 @@ const Login = () => {
 
     }
     return (<div>
-        {cnt}
+        
         <InputBox text={"email"} value ={email} onTextChange={e => setEmail(e.target.value)}/>
         <InputBox text={"password"} value= {pw} onTextChange={e => setPw(e.target.value)} />
         <><div onClick={e => {setCnt(cnt => cnt+1)}}>+</div></>
@@ -95,7 +93,7 @@ const Login = () => {
         </select>
         <br/>  
         <br/>  
-        <button onClick ={submit}>Submission</button>
+        <button onClick ={e => alert(email)}>Submit</button>
 
             
         <br/>  

@@ -42,36 +42,34 @@ export default function Home() {
         <title>Google Form Page Demo</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {userState.cnt}
+      
       
       {user ? 
-      <div> {user.firstName}
+      <div> <div style={{fontSize:30}}>Welcome, {user.firstName}</div>
         <br/>  
         <br/>  
         <button onClick={e => logout()}>logout</button>
       </div>
       :
-      <div>no user 
+      <div><div style={{fontSize:30}}>no user</div>
+        <br/>
+        <br/>
         <Link href="/users/login">
           
-        <button> login</button>
+        <button style={{fontSize:30}}> login</button>
         </Link>
-        
+
       </div>
+      
       
       
       }
       
       <br/>  
-      <button onClick={e => increaseCnt()}>
-        +
-      </button>
-      <button onClick={e => decreaseCnt()}>
-        -
-      </button>
-      <div>Hello</div>
+      
+      <div>Hello and Welcome</div>
       <br/>
-      <button style={{fontSize:50}} onClick={e => alert("fuck you")}>MAGICAL BUTTON</button>
+      <button style={{fontSize:50}} onClick={e => alert("Hi")}>MAGICAL BUTTON</button>
       <br/>
       <button style={{fontSize:20}} onClick={e => router.push("/createForm")}>Google Form Page</button>
     </div>
