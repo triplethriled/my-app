@@ -72,7 +72,8 @@ export default function Home() {
       <div>Hello</div>
       <br/>
       <button style={{fontSize:50}} onClick={e => alert("fuck you")}>MAGICAL BUTTON</button>
-      
+      <br/>
+      <button style={{fontSize:20}} onClick={e => router.push("/createForm")}>Google Form Page</button>
     </div>
   )
 }
