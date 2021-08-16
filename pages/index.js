@@ -70,6 +70,8 @@ export default function Home() {
         -
       </button>
       <div>Hello</div>
+      <br/>
+      <button style={{fontSize:50}} onClick={e => alert("fuck you")}>MAGICAL BUTTON</button>
       
     </div>
   )
