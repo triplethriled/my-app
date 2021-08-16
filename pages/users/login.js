@@ -90,7 +90,7 @@ const Login = () => {
         <input checked={isAgreeInfo} type="checkbox" onClick={e => updateIsAgreeInfo()}/>
         <select value={signupPath} onChange={e => onSignupPathChange(e)}>
             <option value={"search"}>search</option>
-            <option value={"ads"}>Ads</option>
+            <option value={"ads"}>Ads hihi</option>
             <option calue={"etc"}>Etc</option>
         </select>
         <br/>  
